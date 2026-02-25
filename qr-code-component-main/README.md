@@ -37,8 +37,8 @@ The final result is a lightweight, accessible, and visually accurate component t
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/joaogllm/frontend-mentor-tests/tree/main/qr-code-component-main)
-- Live Site URL: [Add live site URL here](https://joaogllm.github.io/frontend-mentor-tests/qr-code-component-main/)
+- Solution URL: [Repository](https://github.com/joaogllm/frontend-mentor-tests/tree/main/qr-code-component-main)
+- Live Site URL: [Live](https://joaogllm.github.io/frontend-mentor-tests/qr-code-component-main/)
 
 ### Built with
 
