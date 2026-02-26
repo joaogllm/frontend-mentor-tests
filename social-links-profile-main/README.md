@@ -10,8 +10,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Links](#links)
   - [Built with](#built-with)
   - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Author](#author)
 
 ## Overview
 
