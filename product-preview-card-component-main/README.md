@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository](https://github.com/joaogllm/frontend-mentor-tests/tree/main/results-summary-component-main)
-- Live Site URL: [Live](https://joaogllm.github.io/frontend-mentor-tests/results-summary-component-main/)
+- Solution URL: [Repository](https://github.com/joaogllm/frontend-mentor-tests/tree/main/product-preview-card-component-main)
+- Live Site URL: [Live](https://joaogllm.github.io/frontend-mentor-tests/product-preview-card-component-main/)
 
 ### Built with
 
