@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card-container">
+        <div class="card-image-container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="Equilibrium NFT — a floating glass cube"
+            class="card-image"
+          />
+          <div class="hover-overlay">
+            <img src="./images/icon-view.svg" alt="" class="view-icon" />
+          </div>
+        </div>
+        <div class="card-details">
+          <h2 class="card-title">Equilibrium #3429</h2>
+          <p class="card-description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="price">
+            <span class="price-day-container ethereum-price"
+              ><img
+                src="./images/icon-ethereum.svg"
+                alt=""
+                class="ethereum-icon"
+              />
+              0.041 ETH</span
+            >
+            <span class="price-day-container"
+              ><img
+                src="./images/icon-clock.svg"
+                alt=""
+                class="days-left-icon"
+              />
+              3 days left</span
+            >
+          </div>
+          <div class="creator">
+            <img
+              src="./images/image-avatar.png"
+              alt="Jules Wyvern, creator avatar"
+              class="creator-photo"
+            />
+            <p>Creation of <a href="#" class="creator-name">Jules Wyvern</a></p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

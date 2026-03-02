@@ -1,0 +1,173 @@
+:root {
+  /* ===== Primary ===== */
+  --color-blue-500: hsl(215, 51%, 70%);
+  --color-cyan-400: hsl(178, 100%, 50%);
+  --color-cyan-400-alpha: hsl(178, 100%, 50%, 0.6);
+
+  /* ===== Neutral ===== */
+  --color-blue-950: hsl(217, 54%, 11%); /* main background */
+  --color-blue-900: hsl(216, 50%, 16%); /* card background */
+  --color-blue-800: hsl(215, 32%, 27%); /* line */
+  --color-white: hsl(0, 0%, 100%);
+}
+/* ===== CSS Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-blue-950);
+  font-family: "Outfit", sans-serif;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.card-container {
+  background-color: var(--color-blue-900);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.card-image-container {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+.card-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-cyan-400-alpha);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+.view-icon {
+  width: 48px;
+}
+.card-image-container:hover .hover-overlay {
+  opacity: 1;
+}
+.card-title {
+  color: var(--color-white);
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.card-title:hover {
+  color: var(--color-cyan-400);
+}
+.card-description {
+  color: var(--color-blue-500);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  color: var(--color-blue-500);
+  border-bottom: 1px solid var(--color-blue-800);
+}
+.ethereum-icon {
+  width: 16px;
+}
+.ethereum-price {
+  color: var(--color-cyan-400);
+}
+.days-left-icon {
+  width: 20px;
+}
+.price-day-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  color: var(--color-blue-500);
+  font-size: 1.2rem;
+}
+.creator-photo {
+  width: 40px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+.creator-name {
+  color: var(--color-white);
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+.creator-name:hover {
+  color: var(--color-cyan-400);
+}
+@media (min-width: 600px) {
+  .card-container {
+    max-width: 350px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+}
