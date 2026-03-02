@@ -1,0 +1,173 @@
+:root {
+  /* ===== Primary ===== */
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+  --purple-700: hsl(245, 83%, 68%);
+
+  /* ===== Neutral ===== */
+  --blue-50: hsl(225, 100%, 98%);
+  --gray-600: hsl(224, 23%, 55%);
+  --blue-950: hsl(223, 47%, 23%);
+  --radius-card: 15px;
+}
+/* === CSS Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding: 1.5rem;
+  background-color: var(--blue-100);
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto; /* makes it stretch across width */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.summary-container {
+  background-color: white;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  width: 100%;
+  max-width: 375px;
+}
+.summary-hero {
+  width: 100%;
+}
+.plan-container {
+  padding: 0 2rem 2rem 2rem;
+  text-align: center;
+}
+.plan-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--blue-950);
+  margin-top: 2rem;
+}
+.plan-description {
+  color: var(--gray-600);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.annual-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-50);
+  padding: 1.1rem;
+  border-radius: var(--radius-card);
+}
+.annual-plan-info {
+  text-align: left;
+}
+.annual-plan-title {
+  font-weight: 900;
+  color: var(--blue-950);
+}
+.annual-plan-price {
+  color: var(--gray-600);
+  font-weight: 700;
+}
+.change-btn {
+  color: var(--blue-700);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.change-btn:hover {
+  color: var(--purple-700);
+  text-decoration: none;
+}
+.proceed-btn {
+  background-color: var(--blue-700);
+  color: white;
+  padding: 0.8rem;
+  border-radius: var(--radius-card);
+  width: 100%;
+  font-weight: 700;
+  margin-top: 2rem;
+  box-shadow: 0px 16px 31px -13px #766cf1;
+  transition: background-color 0.3s ease;
+}
+.proceed-btn:hover {
+  background-color: var(--purple-700);
+}
+.cancel-btn {
+  color: var(--gray-600);
+  font-weight: 900;
+  margin-top: 1.5rem;
+  transition: color 0.3s ease;
+}
+.cancel-btn:hover {
+  color: var(--blue-950);
+}
+.proceed-btn:focus-visible,
+.change-btn:focus-visible,
+.cancel-btn:focus-visible {
+  outline: 3px solid var(--blue-700);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+@media (min-width: 600px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
