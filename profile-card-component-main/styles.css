@@ -6,6 +6,8 @@
 
   /* Neutral */
   --gray-100: hsl(225, 10%, 92%);
+  /* Shadow */
+  --shadow: 0px 20px 30px -10px hsl(227, 10%, 46%, 0.4);
 }
 /* === CSS Reset === */
 *,
@@ -84,8 +86,8 @@ button {
 .profile-card {
   background-color: white;
   border-radius: 15px;
-  min-width: 350px;
-  box-shadow: 0px 20px 30px -10px hsl(227, 10%, 46%, 0.4);
+  min-width: 22em;
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 .profile-card__content {
