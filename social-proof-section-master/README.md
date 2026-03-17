@@ -10,7 +10,7 @@
 
 ## Overview
 
-This is a solution to the [Social Proof Section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-master-pHiMpHS6e). The goal was to build a responsive social proof section that closely matches the provided design, featuring a staggered rating layout and testimonial cards that adapt from a stacked mobile view to a side-by-side desktop layout.
+This is a solution to the [Social Proof Section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). The goal was to build a responsive social proof section that closely matches the provided design, featuring a staggered rating layout and testimonial cards that adapt from a stacked mobile view to a side-by-side desktop layout.
 
 ### The challenge
 
